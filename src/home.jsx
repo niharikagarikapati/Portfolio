@@ -19,16 +19,18 @@ const Home = () => {
     deleteSpeed: 80,
     delaySpeed: 1500,
   });
-const scrollToContact = () => {
-  const contactSection = document.getElementById("contact");
-  contactSection.scrollIntoView({ behavior: "smooth" });
-};
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="container">
       <Navbar />
-      <div className="container min-h-screen p-4" id="section1">
-        <div>
-          <h1 className="text-white text-4xl font-marker ml-12">
+      <div className="min-h-screen p-4" id="section1">
+        <div className="text-center">
+          <h1 className="text-white text-4xl md:text-5xl font-marker ml-12">
             cout &lt;&lt; &quot; <span className="text-white">{text}</span>
             &quot;
           </h1>
@@ -36,35 +38,34 @@ const scrollToContact = () => {
             <Cursor cursorStyle="|" />
           </span>
         </div>
-        <div className="flex items-center justify-between">
-          {" "}
-          <div className="text-left text-balance p-4 w-2/3">
-            <h1 className=" text-green-300 font-mono font-extrabold text-7xl pb-6">
-              {" "}
-              &lt;/Niharika Garikapati>
+        <div className="flex flex-col md:flex-row items-center justify-between mt-12">
+          <div className="text-left text-white p-4 w-full md:w-2/3">
+            <h1 className="text-green-300 font-mono font-extrabold text-5xl sm:text-6xl md:text-7xl pb-6">
+              &lt;/Niharika Garikapati&gt;
             </h1>
-            <div className="text-white text-xl font-light font-mono al">
-              <span className="text-green-300 text-4xl p-4">&gt;&gt;</span> I am
-              Niharika currently persuing my final year in B.Tech,computer
-              science and business systems. Intially, I did not have much
-              interest in programming and coding but later when i started
-              learning, i found it much interesting and challenging as well.Now,
-              I started creating new and innovative things.I am very passionate
-              and focussed on learning new technologies.
+            <div className="text-white text-lg sm:text-xl font-light font-mono">
+              <span className="text-green-300 text-3xl sm:text-4xl p-4">
+                &gt;&gt;
+              </span>{" "}
+              I am Niharika, currently pursuing my final year in B.Tech,
+              Computer Science and Business Systems. Initially, I did not have
+              much interest in programming, but later I found it exciting and
+              challenging. Now, I am passionate about learning new technologies
+              and creating innovative solutions.
             </div>
-            <div className="flex justify-center items-center pt-5 pr-40">
+            <div className="flex justify-center items-center pt-5">
               <button
-                className="text-white text-lg bg-pink-600 rounded-lg p-4 w-1/3"
+                className="text-white text-lg bg-pink-600 rounded-lg p-4 w-1/2 sm:w-1/3 md:w-1/4"
                 onClick={scrollToContact}
               >
-                Contact me
+                Contact Me
               </button>
             </div>
           </div>
-          <div className="w-1/3 p-4">
-            <Lottie animationData={animation} className="" />
-            <div className="text-lg flex justify-center items-center border-2 border-pink-600 rounded-lg p-4">
-              <a href={resume} className=" text-white " download>
+          <div className="w-full md:w-1/3 p-4">
+            <Lottie animationData={animation} className="w-full h-auto" />
+            <div className="text-lg flex justify-center items-center border-2 border-pink-600 rounded-lg p-4 mt-6">
+              <a href={resume} className="text-white" download>
                 Download My Resume
               </a>
             </div>
@@ -72,21 +73,25 @@ const scrollToContact = () => {
         </div>
       </div>
       <ScrollView>
-        <div id="project" className="h-[70vh]  text-white pb-24">
-          <h1 className="text-5xl text-center font-marker pb-14">Projects</h1>
+        <div id="project" className="h-[70vh] text-white pb-24 px-6 sm:px-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker pb-14">
+            Projects
+          </h1>
           <Projects />
         </div>
-        <div id="achievements" className="h-[70vh] p-24 text-white">
-          <p>
-            <Skills />
-          </p>
+        <div id="skills" className="h-[70vh] text-white">
+          <Skills />
         </div>
-        <div id="experiences" className="h-[70vh] p-24 text-white">
-          <h1 className="font-marker text-5xl text-center pb-6">Experiences</h1>
+        <div id="experiences" className="h-[70vh]  text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker ">
+            Experiences
+          </h1>
           <Experiences />
         </div>
-        <div id="contact" className="h-[70vh] pb-24 text-white">
-          <h1 className="font-marker text-5xl text-center pb-14">Contact</h1>
+        <div id="contact" className="min-h-screen  text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker ">
+            Contact
+          </h1>
           <Contact />
         </div>
       </ScrollView>

@@ -39,7 +39,7 @@ const Skills = () => {
   }, [inView]);
 
   return (
-    <div ref={ref} className="py-10">
+    <div ref={ref}>
       <h1 className="text-white font-marker text-5xl text-center mb-8">
         Skills
       </h1>
