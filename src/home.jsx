@@ -26,25 +26,25 @@ const Home = () => {
   };
 
   return (
-    <div className="container">
+    <div className='container md:pb-12'>
       <Navbar />
-      <div className="min-h-screen p-4" id="section1">
-        <div className="text-center">
-          <h1 className="text-white text-4xl md:text-5xl font-marker ml-12">
-            cout &lt;&lt; &quot; <span className="text-white">{text}</span>
+      <div className='min-h-screen p-4' id='section1'>
+        <div className='text-center'>
+          <h1 className='text-white text-4xl md:text-5xl font-marker ml-12'>
+            cout &lt;&lt; &quot; <span className='text-white'>{text}</span>
             &quot;
           </h1>
           <span>
-            <Cursor cursorStyle="|" />
+            <Cursor cursorStyle='|' />
           </span>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between mt-12">
-          <div className="text-left text-white p-4 w-full md:w-2/3">
-            <h1 className="text-green-300 font-mono font-extrabold text-5xl sm:text-6xl md:text-7xl pb-6">
+        <div className='flex flex-col md:flex-row items-center justify-between mt-12'>
+          <div className='text-left text-white p-4 w-full md:w-2/3'>
+            <h1 className='text-green-300 font-mono font-extrabold text-5xl sm:text-6xl md:text-7xl pb-6'>
               &lt;/Niharika Garikapati&gt;
             </h1>
-            <div className="text-white text-lg sm:text-xl font-light font-mono">
-              <span className="text-green-300 text-3xl sm:text-4xl p-4">
+            <div className='text-white text-lg sm:text-xl font-light font-mono'>
+              <span className='text-green-300 text-3xl sm:text-4xl p-4'>
                 &gt;&gt;
               </span>{" "}
               I am Niharika, currently pursuing my final year in B.Tech,
@@ -53,19 +53,18 @@ const Home = () => {
               challenging. Now, I am passionate about learning new technologies
               and creating innovative solutions.
             </div>
-            <div className="flex justify-center items-center pt-5">
+            <div className='flex justify-center items-center pt-5'>
               <button
-                className="text-white text-lg bg-pink-600 rounded-lg p-4 w-1/2 sm:w-1/3 md:w-1/4"
-                onClick={scrollToContact}
-              >
+                className='text-white text-lg bg-pink-600 rounded-lg p-4 w-1/2 sm:w-1/3 md:w-1/4'
+                onClick={scrollToContact}>
                 Contact Me
               </button>
             </div>
           </div>
-          <div className="w-full md:w-1/3 p-4">
-            <Lottie animationData={animation} className="w-full h-auto" />
-            <div className="text-lg flex justify-center items-center border-2 border-pink-600 rounded-lg p-4 mt-6">
-              <a href={resume} className="text-white" download>
+          <div className='w-full md:w-1/3 p-4'>
+            <Lottie animationData={animation} className='w-full h-auto' />
+            <div className='text-lg flex justify-center items-center border-2 border-pink-600 rounded-lg p-4 mt-6'>
+              <a href={resume} className='text-white' download>
                 Download My Resume
               </a>
             </div>
@@ -73,23 +72,23 @@ const Home = () => {
         </div>
       </div>
       <ScrollView>
-        <div id="project" className="h-[70vh] text-white pb-24 px-6 sm:px-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker pb-14">
+        <div id='project' className='h-[70vh] text-white pb-24 px-6 sm:px-12'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-marker pb-14'>
             Projects
           </h1>
           <Projects />
         </div>
-        <div id="skills" className="h-[70vh] text-white">
+        <div id='skills' className='h-[70vh] text-white'>
           <Skills />
         </div>
-        <div id="experiences" className="h-[70vh]  text-white">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker ">
+        <div id='experiences' className='h-[70vh]  text-white'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-marker '>
             Experiences
           </h1>
           <Experiences />
         </div>
-        <div id="contact" className="min-h-screen  text-white">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-marker ">
+        <div id='contact' className='min-h-screen  text-white px-6'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-marker '>
             Contact
           </h1>
           <Contact />

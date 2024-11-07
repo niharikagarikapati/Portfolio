@@ -7,7 +7,7 @@ import Projects from "./project";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="/projects" element={<Projects />} />
     </Routes>
   );
