@@ -23,19 +23,17 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-screen-lg mx-auto overflow-hidden pt-14">
+    <div className='relative max-w-screen-lg mx-auto overflow-hidden pt-14 px-4'>
       {/* Image container with smooth sliding effect */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
+        className='flex transition-transform duration-500 ease-in-out'
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
-          >
+            className='flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
             <img
-              className="w-full h-auto rounded-lg shadow-md block"
+              className='w-full h-auto rounded-lg shadow-md block'
               src={image.src}
               alt={image.alt}
             />
@@ -45,19 +43,17 @@ const Carousel = () => {
 
       {/* Previous slide button */}
       <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
+        className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none'
         onClick={prevSlide}
-        aria-label="Previous Slide"
-      >
+        aria-label='Previous Slide'>
         &#10094;
       </button>
 
       {/* Next slide button */}
       <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none"
+        className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none'
         onClick={nextSlide}
-        aria-label="Next Slide"
-      >
+        aria-label='Next Slide'>
         &#10095;
       </button>
     </div>

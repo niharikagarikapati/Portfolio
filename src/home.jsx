@@ -30,7 +30,7 @@ const Home = () => {
       <Navbar />
       <div className='min-h-screen p-4' id='section1'>
         <div className='text-center'>
-          <h1 className='text-white text-4xl md:text-5xl font-marker ml-12'>
+          <h1 className='text-white text-xl md:text-5xl font-marker md:ml-12'>
             cout &lt;&lt; &quot; <span className='text-white'>{text}</span>
             &quot;
           </h1>
@@ -72,16 +72,18 @@ const Home = () => {
         </div>
       </div>
       <ScrollView>
-        <div id='project' className='h-[70vh] text-white pb-24 px-6 sm:px-12'>
+        <div
+          id='project'
+          className='md:h-[70vh] text-white pb-24 px-6 sm:px-12'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-marker pb-14'>
             Projects
           </h1>
           <Projects />
         </div>
-        <div id='skills' className='h-[70vh] text-white'>
+        <div id='skills' className='md:h-[70vh] text-white'>
           <Skills />
         </div>
-        <div id='experiences' className='h-[70vh]  text-white'>
+        <div id='experiences' className='md:h-[70vh]  text-white'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-marker '>
             Experiences
           </h1>

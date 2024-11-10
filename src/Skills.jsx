@@ -40,28 +40,27 @@ const Skills = () => {
 
   return (
     <div ref={ref}>
-      <h1 className="text-white font-marker text-5xl text-center mb-8">
+      <h1 className='text-white font-marker text-5xl text-center mb-8'>
         Skills
       </h1>
-      <div className="container mx-auto p-6">
-        <div className="space-y-6">
+      <div className='container md:w-2/3 mx-auto p-6'>
+        <div className='space-y-6'>
           {skills.map((skill, index) => {
             const barColor = getBarColor(skill.level);
 
             return (
-              <div key={index} className="flex items-center gap-4">
-                <label className="w-32 text-lg font-medium text-white">
+              <div key={index} className='flex items-center gap-4'>
+                <label className='w-1/3 md:w-32 text-lg font-medium text-white'>
                   {skill.name}
                 </label>
-                <div className="flex-1 relative">
-                  <div className="w-full h-3 bg-slate-900 rounded-full">
+                <div className='flex-1 relative'>
+                  <div className='w-full h-3 bg-slate-900 rounded-full'>
                     <div
                       className={`h-full rounded-full ${barColor}`}
                       style={{
                         width: loaded ? `${skill.level * 100}%` : "0%",
                         transition: "width 1.5s ease-out", // Smooth transition
-                      }}
-                    ></div>
+                      }}></div>
                   </div>
                 </div>
               </div>
