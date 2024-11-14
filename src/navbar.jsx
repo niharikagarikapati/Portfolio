@@ -59,7 +59,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={toggleMenu}>
-            <Link smooth to='#achievements' className='hover:text-yellow-300'>
+            <Link smooth to='#skills' className='hover:text-yellow-300'>
               Skills
             </Link>
           </li>
